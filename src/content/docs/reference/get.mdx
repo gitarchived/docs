@@ -1,0 +1,36 @@
+---
+title: Get repository
+description: Get a repository
+---
+
+You can add a repository with a `GET` request to `/<host>/<owner>/<repo>`.
+
+```http
+GET https://api.gitarchived.org/github/gitarchived/api
+```
+
+### Response
+```json
+{
+  "data": {
+    "id": 7,
+    "owner": "gitarchived",
+    "name": "api",
+    "host": "github",
+    "deleted": false,
+    "createdAt": 00000000, // Unix timestamp
+    "lastCommit":"643edc34db4065200b24f7cea46ec69682df1f79"
+  },
+  "message": "OK",
+  "status": 200
+}
+```
+
+### Query parameters
+| Parameter | Description | Example |
+| :--- | :--- | :---
+| host | The host of the repository | github |
+| owner | The owner of the repository |  gitarchived |
+| repo | The name of the repository | api |
+
+*You can use only [supported hosts](/) url*

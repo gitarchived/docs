@@ -1,0 +1,35 @@
+---
+title: Search repositories
+description: Search repositories
+---
+
+You can search repositories by name and owner
+
+```http
+GET https://api.gitarchived.org/search?q=query
+```
+
+### Response
+```json
+{
+  "results": [
+    {
+      "id": 0,
+      "owner": "gitarchived",
+      "name": "api",
+      "host": "github",
+      "deleted": false,
+      "createdAt": 00000000, // Unix timestamp
+      "lastCommit": "cd6db35a6974d11c65f82d06cb9e86047ab8f8f6"
+    }
+  ],
+  "message": "OK",
+  "status": 200
+}
+```
+
+### Query parameters
+| Parameter | Description | Example |
+| :--- | :--- | :---
+| q | Search query | svelte 
+

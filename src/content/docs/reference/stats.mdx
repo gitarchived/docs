@@ -1,0 +1,24 @@
+---
+title: Registry Stats
+description: Get registry informations
+---
+
+You can get registry information with a `GET` request to `/`
+
+```http
+GET https://api.gitarchived.org/
+```
+
+### Response
+```json
+{
+  "hosts": {
+    "total": 1
+  },
+  "repos": {
+    "active": 21,
+    "deleted": 0,
+    "total": 21
+  }
+}
+```
