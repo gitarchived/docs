@@ -6,6 +6,13 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'GitArchived',
+      logo: {
+        src: './src/assets/gitarchived.png',
+        replacesTitle: true,
+      },
+      customCss: [
+        './src/styles/custom.css'
+      ],
       social: {
         github: 'https://github.com/gitarchived',
       },
@@ -13,6 +20,10 @@ export default defineConfig({
         {
           label: 'Reference',
           autogenerate: { directory: 'reference' },
+        },
+        {
+          label: 'Information',
+          autogenerate: { directory: 'information' },
         },
       ],
     }),
