@@ -1,0 +1,32 @@
+---
+title: Repository Struct
+description: Repository struct data and types
+---
+
+Declered on `gitarchived/api` at [`models/Repository.go#L17`](https://github.com/gitarchived/api/blob/main/models/Repository.go#L17)
+
+### Repository Struct
+```go
+{
+  "id": int,
+  "name": string,
+  "owner": string,
+  "host": string,
+  "deleted": bool,
+  "createdAt": bool,
+  "lastCommit": string,
+}
+```
+
+### Example
+```json
+{
+  "id": 7,
+  "owner": "gitarchived",
+  "name": "api",
+  "host": "github",
+  "deleted": false,
+  "createdAt": 00000000, // Unix timestamp
+  "lastCommit":"643edc34db4065200b24f7cea46ec69682df1f79"
+}
+```

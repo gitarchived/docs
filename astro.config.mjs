@@ -15,17 +15,26 @@ export default defineConfig({
     social: {
       github: 'https://github.com/gitarchived'
     },
-    sidebar: [{
-      label: 'Reference',
-      autogenerate: {
-        directory: 'reference'
+    sidebar: [
+      {
+        label: 'Reference',
+        autogenerate: {
+          directory: 'reference'
+        }
+      },
+      {
+        label: 'Information',
+        autogenerate: {
+          directory: 'information'
+        }
+      },
+      {
+        label: 'Structures',
+        autogenerate: {
+          directory: 'structs'
+        }
       }
-    }, {
-      label: 'Information',
-      autogenerate: {
-        directory: 'information'
-      }
-    }]
+    ]
   })],
   output: "server",
   adapter: cloudflare({ mode: "directory" }),
