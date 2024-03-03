@@ -1,6 +1,4 @@
 # GitArchived Docs
-
-## Introduction
 Welcome to the GitArchived API documentation repository! This repository contains the sources for GitArchived's API documentation, aiming to provide developers with comprehensive information about integrating with GitArchived's services.
 
 ## Contributing
