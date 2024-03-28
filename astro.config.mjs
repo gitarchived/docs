@@ -7,7 +7,17 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   integrations: [starlight({
     title: 'GitArchived',
-    favicon: './public/favicon.png',
+    favicon: '/favicon.png',
+    head: [
+      {
+        tag: 'link',
+        attrs: {
+          rel: 'icon',
+          href: '/favicon.png',
+          sizes: '16x16',
+        }
+      }
+    ],
     logo: {
       src: './src/assets/gitarchived.png',
       replacesTitle: true
